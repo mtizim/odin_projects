@@ -1,0 +1,38 @@
+.mainimage{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	margin-top:89px;
+}
+.right_ul{
+	float:right;	
+	height: 0;	
+}
+.left_ul{
+	float:left;
+	height:0;
+}
+.button{
+	font-size: 20px;
+	height: 75%;
+	width:250px;	
+}
+.inner{
+	display: inline-block;
+}
+.blank{
+	height: 5px;
+}
+.inline{
+	display:inline-flex;
+}
+.right{
+	justify-content: flex-end;
+}
+.footer {
+  bottom: 1%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
