@@ -1,38 +1,71 @@
 .mainimage{
-	align-items:center;
-	display:flex;
-	justify-content:center;
-	margin-top:89px;
+  align-items:center;
+  display:flex;
+  justify-content:center;
+  margin-top:89px;
+  height:50%;
+  margin-bottom: 7px;
+  width:50%;
 }
 .right_ul{
 	float:right;	
 	height: 0;	
 }
 .left_ul{
-	float:left;
-	height:0;
+  float:left;
+  height:0;
 }
-.button{
-	font-size: 20px;
-	height: 75%;
-	width:250px;	
+.buttonmain{
+  background-color: #1499FFFF;
+  border:2px solid #1499FFFF;
+  color:white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 7px;
+  padding: 5px 10px;
+  width:25%; 
+}
+button{
+  background-color: transparent;
+  border:none;
+  outline: none;
+}
+.buttonbottom{
+  background-color: Transparent;
+  border: none;
+  color:black;
+  outline: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.buttomtop{
+  font-size:15px;
+}
+.input{
+  width: 60%;
+  height:10%;
+  font-size:15px;  
+}
+.rounded{
+  border-radius:2px;
 }
 .inner{
-	display: inline-block;
+  display: inline-block;
 }
 .blank{
-	height: 5px;
+  height: 5px;
 }
 .inline{
-	display:inline-flex;
+  display:inline-flex;
 }
 .right{
-	justify-content: flex-end;
+  justify-content: flex-end;
+  float:right;
 }
 .footer {
-  bottom: 1%;
+  bottom:0;
   left: 0;
   position: absolute;
   right: 0;
-  text-align: center;
+  background-color: #D3D3D3FF;
 }
