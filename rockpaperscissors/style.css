@@ -1,0 +1,35 @@
+.gameButton{
+	background-color: Gray;
+	border-radius:3px;
+	border:2px solid Gray;
+	color:white;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 1%;
+	padding: 7px 7%;
+	text-align: center;
+	width: 25% ;
+}
+
+.buttons{
+	bottom:25vh;
+	left:0;
+	position:absolute;
+	right:0;
+}
+.gameInfo {
+	font-family: "Roboto";
+	font-size: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	left:0;
+	position:absolute;
+	right: 0;
+	top:35vh;
+}
+
+#g2{
+	font-size: 30px;
+	margin-top: 0.5vh;
+}
