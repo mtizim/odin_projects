@@ -1,10 +1,10 @@
 .mainimage{
   align-items:center;
   display:flex;
-  justify-content:center;
-  margin-top:89px;
   height:50%;
+  justify-content:center;
   margin-bottom: 7px;
+  margin-top:89px;
   width:50%;
 }
 .right_ul{
@@ -22,29 +22,28 @@
   font-size: 13px;
   font-weight: bold;
   margin-top: 7px;
-  padding: 5px 10px;
-  width:25%; 
+  padding: 5px 7%;
+   
 }
 button{
   background-color: transparent;
   border:none;
   outline: none;
 }
-.buttonbottom{
-  background-color: Transparent;
+.buttonbottom{  
   border: none;
   color:black;
   outline: none;
-  padding-top: 6px;
   padding-bottom: 6px;
+  padding-top: 6px;
 }
 .buttomtop{
   font-size:15px;
 }
 .input{
-  width: 60%;
-  height:10%;
   font-size:15px;  
+  height:10%;
+  width: 60%;
 }
 .rounded{
   border-radius:2px;
@@ -59,13 +58,13 @@ button{
   display:inline-flex;
 }
 .right{
-  justify-content: flex-end;
   float:right;
+  justify-content: flex-end;
 }
 .footer {
+  background-color: #D3D3D3FF;
   bottom:0;
   left: 0;
   position: absolute;
   right: 0;
-  background-color: #D3D3D3FF;
 }
