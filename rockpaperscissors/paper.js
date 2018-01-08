@@ -32,7 +32,7 @@ function playRound(player){
 		return ["lose",player,computer];
 	}
 }
- 
+var idle=0 
 var btnRock = document.querySelector('.btnRock');
 var btnPaper = document.querySelector('.btnPaper');
 var btnScissors = document.querySelector('.btnScissors');
@@ -41,7 +41,9 @@ btnRock.addEventListener("click",    function() { afterbuttonclick(playRound("Ro
 btnPaper.addEventListener("click",   function() { afterbuttonclick(playRound("Paper")) ; } );
 btnScissors.addEventListener("click",function() { afterbuttonclick(playRound("Scissors"));});
 
+
 function afterbuttonclick(game){
+  clearTimeout(idle)
 	let outcome = game[0];
 	let playerpick = game[1];
 	let computerpick = game[2];
@@ -49,9 +51,9 @@ function afterbuttonclick(game){
 	let msg = (outcome=="win") ? "You won!" : ((outcome == "tie")? "It's a tie" : "You lost");
 	document.getElementById('g1').innerHTML = gameStatus;
 	document.getElementById('g2').innerHTML = msg;
-	setTimeout(function(){
-		document.getElementById('g1').innerHTML = "";
-		document.getElementById('g2').innerHTML = "Take your pick";
-	},2000);
+	idle = setTimeout(function(){
+          	document.getElementById('g1').innerHTML = "";
+          	document.getElementById('g2').innerHTML = "Take your pick";}
+            ,2000);
 }
 
