@@ -44,8 +44,10 @@ btnScissors.addEventListener("click",function(e) { afterbuttonclick(e,playRound(
 
 function afterbuttonclick(event,game){
   	clearTimeout(idle)
-  	let allbuttons = document.querySelector(".gameButton")
-  		allbuttons.style.backgroundColor = "Gray"
+  	let allbuttons = document.querySelectorAll(".gameButton")
+  		allbuttons[0].style.backgroundColor = "Gray"
+  		allbuttons[1].style.backgroundColor = "Gray"
+  		allbuttons[2].style.backgroundColor = "Gray"
   	let buttonPressed = event.target
   		buttonPressed.style.backgroundColor = "#404040"
 	let outcome = game[0];
