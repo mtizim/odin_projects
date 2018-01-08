@@ -37,13 +37,17 @@ var btnRock = document.querySelector('.btnRock');
 var btnPaper = document.querySelector('.btnPaper');
 var btnScissors = document.querySelector('.btnScissors');
 
-btnRock.addEventListener("click",    function() { afterbuttonclick(playRound("Rock")); }  );
-btnPaper.addEventListener("click",   function() { afterbuttonclick(playRound("Paper")) ; } );
-btnScissors.addEventListener("click",function() { afterbuttonclick(playRound("Scissors"));});
+btnRock.addEventListener("click",    function(e) { afterbuttonclick(e,playRound("Rock")); }  );
+btnPaper.addEventListener("click",   function(e) { afterbuttonclick(e,playRound("Paper")) ; } );
+btnScissors.addEventListener("click",function(e) { afterbuttonclick(e,playRound("Scissors"));});
 
 
-function afterbuttonclick(game){
-  clearTimeout(idle)
+function afterbuttonclick(event,game){
+  	clearTimeout(idle)
+  	let allbuttons = document.querySelector(".gameButton")
+  		allbuttons.style.backgroundColor = "Gray"
+  	let buttonPressed = event.target
+  		buttonPressed.style.backgroundColor = "#404040"
 	let outcome = game[0];
 	let playerpick = game[1];
 	let computerpick = game[2];
@@ -52,6 +56,7 @@ function afterbuttonclick(game){
 	document.getElementById('g1').innerHTML = gameStatus;
 	document.getElementById('g2').innerHTML = msg;
 	idle = setTimeout(function(){
+			buttonPressed.style.backgroundColor = "Gray"
           	document.getElementById('g1').innerHTML = "";
           	document.getElementById('g2').innerHTML = "Take your pick";}
             ,2000);
