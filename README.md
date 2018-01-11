@@ -4,3 +4,5 @@ Homework from theodinproject.com
 https://mtizim.github.io/odin_projects/rockpaperscissors.html
 ### google replica
 https://mtizim.github.io/odin_projects/google.html
+### etch-a-sketch
+https://mtizim.github.io/odin_projects/etchasketch.html
