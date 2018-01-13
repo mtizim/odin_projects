@@ -81,6 +81,14 @@ function equal(e){
 	else{
 	if (lastResult===""){lastResult=lastValue}
 	if (lastOperand===""){lastOperand=currentNum()}
+		//Need to sanitize cause spaghetti
+	if (String(lastResult)[String(lastResult).length-1]=="."){
+		console.log(lastResult)
+		lastResult= +String(lastResult).slice(0,String(lastResult).length-1)}
+		console.log(lastResult)
+	if (String(lastResult)[String(lastOperand).length-1]=="."){
+		console.log(lastOperand)
+		lastOperand= +String(lastOperand).slice(0,String(lastOperand).length-1)}	
 	currPlaceholder=operate(lastResult,lastOperand,pressedOp)
 	lastResult=currPlaceholder
 	shouldValueBeChanged=true
