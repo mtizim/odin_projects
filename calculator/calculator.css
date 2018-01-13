@@ -7,14 +7,13 @@
 	grid-template-rows: 60px;
 }
 .topbtns {
-	width: 99.5%;
-	height:99.5%;
+	width: 99.8%;
+	height:99.8%;
 	background-color: #FF693CFF;
 	border: none;
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
-	border-radius: 3px
 }
 #display{
  	grid-column-start: 1;
@@ -47,13 +46,12 @@
 	user-select: none;
 }
 .btns{
-	width: 98.5%;
-	height:98.5%;
+	width: 99%;
+	height:99%;
 	border: none;
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
-	border-radius: 3px;
 	user-select: none;
 
 }
