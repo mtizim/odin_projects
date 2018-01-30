@@ -14,6 +14,7 @@ def merge(left, right)
 end
 
 def merge_sort(list)
+  return list if list.length == 0
   return list if list.length == 1
   middle = (list.length / 2).floor
   left = merge_sort(list[0...middle])
