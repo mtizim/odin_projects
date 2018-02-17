@@ -1,0 +1,28 @@
+.over{
+	margin-top: 45vh
+}
+.nover{
+	margin-top:1vh;
+}
+input{
+	width:3em;
+	border:2px solid BlueViolet;
+	border-radius: 3px;
+	font-size: 17px;
+
+}
+button{
+	background-color: BlueViolet;
+	border-radius:3px;
+	border:2px solid BlueViolet;
+	color:white;
+	width: 15vw;
+	font-size: 17px;
+}
+
+.inline{
+	display: inline-block;
+}
+.mainDiv{
+	margin-top: 1vh;
+}
